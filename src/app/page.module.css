@@ -5,6 +5,7 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  background-color: #b3c5cf;
 }
 
 .description {
@@ -215,8 +216,13 @@
     filter: invert(1);
   }
 
-  .logo {
+  /* .logo {
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  } */
+
+  .main {
+    /* background-color: rgba(var(--background-rgb), 0.9); */
+    background-color: 'white';
   }
 }
 
