@@ -3,24 +3,68 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main
+      className={styles.main}
+      // style={{ background: "red" }}
+    >
+      <img
+        src="/familyLife-logo.png"
+        alt="Family Life Church Logo"
+        style={{ position: "absolute", opacity: 0.1, zIndex: 0 }}
+      />
       <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
+        {/* <p>Statemnet of Faith Here</p> */}
+        <img
+          src="/familyLife-logo.png"
+          alt="Family Life Church Logo"
+          style={{ width: 75 }}
+          // style={{ position: "absolute", opacity: 0.1, zIndex: 0 }}
+        />
+        <img
+          src="/familyLife-words.png"
+          alt="Family Life Church Logo"
+          style={{ height: 75 }}
+        />
+        <div style={{ display: "flex", flexDirection: "row" }}>
           <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://www.instagram.com/familylifechurchsc/"
             target="_blank"
-            rel="noopener noreferrer">
-            By{" "}
+            rel="noopener noreferrer"
+            style={{ marginLeft: 10 }}>
             <Image
-              src="/vercel.svg"
+              src="/instagram-rd-trs.png"
               alt="Vercel Logo"
               className={styles.vercelLogo}
-              width={100}
-              height={24}
+              width={50}
+              height={50}
+              priority
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/people/Family-Life-Church-Iva/61558998081855/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ marginLeft: 10 }}>
+            <Image
+              src="/facebook-rd-trs.png"
+              alt="Vercel Logo"
+              className={styles.vercelLogo}
+              width={50}
+              height={50}
+              priority
+            />
+          </a>
+          <a
+            href="mailto:mike@familylifechurchsc.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ marginLeft: 10 }}>
+            <Image
+              src="/email-rd-trs.png"
+              alt="Vercel Logo"
+              className={styles.vercelLogo}
+              width={50}
+              height={50}
               priority
             />
           </a>
@@ -28,27 +72,53 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
-        <Image
+        {/* <Image
           className={styles.logo}
-          src="/familyLife.svg"
+          src="/familyLife.png"
           alt="Next.js Logo"
-          width={500}
-          height={300}
+          width={750}
+          height={450}
           priority
-        />
+        /> */}
+        <h1 style={{ textAlign: "right", fontSize: 100 }}>
+          Welcome to
+          <br />
+          Family Life
+          <br />
+          Church
+        </h1>
+        <div>
+          <h2>Join us for worship!</h2>
+          <p>
+            Sunday Morning Worship
+            <br />
+            10:00 am
+          </p>
+        </div>
       </div>
 
-      <div className={styles.grid}>
-        <a
+      <div
+      // className={styles.grid}
+      // style={{ height: "20%", width: "100%" }}
+      >
+        {/* <h1>Feel led </h1>
+        <h2>Join us for worship!</h2>
+        <p>
+          Sunday Morning Worship
+          <br />
+          10:00 am
+        </p> */}
+        <p>Statement of faith here</p>
+        {/* <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer">
           <h2>
-            Docs <span>-&gt;</span>
+            Contact Us <span>-&gt;</span>
           </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+          <p>Reach out to our pastoral team and we will get back as soon as possible!</p>
+        </a> */}
 
         <a
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -56,20 +126,20 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer">
           <h2>
-            Learn <span>-&gt;</span>
+            Giving <span>-&gt;</span>
           </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+          <p>Feel led to help finacially? You can donate online here!</p>
         </a>
 
-        <a
+        {/* <a
           href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer">
           <h2>
-            Templates <span>-&gt;</span>
+            Facebook <span>-&gt;</span>
           </h2>
-          <p>Explore starter templates for Next.js.</p>
+          <p>Follow us on Facebook!</p>
         </a>
 
         <a
@@ -78,10 +148,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer">
           <h2>
-            Deploy <span>-&gt;</span>
+            Instagram <span>-&gt;</span>
           </h2>
-          <p>Instantly deploy your Next.js site to a shareable URL with Vercel.</p>
-        </a>
+          <p>Follow us on Instagram!</p>
+        </a> */}
       </div>
     </main>
   );

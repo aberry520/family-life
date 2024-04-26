@@ -10,7 +10,7 @@
 
 .description {
   display: inherit;
-  justify-content: inherit;
+  justify-content: space-between;
   align-items: inherit;
   font-size: 0.85rem;
   max-width: var(--max-width);
@@ -30,9 +30,9 @@
   position: relative;
   margin: 0;
   padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+  /* background-color: rgba(var(--callout-rgb), 0.5); */
+  /* border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius); */
 }
 
 .code {
@@ -76,10 +76,12 @@
 
 .center {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: row;
   align-items: center;
   position: relative;
   padding: 4rem 0;
+  width: 100%;
 }
 
 .center::before {
@@ -214,6 +216,8 @@
 @media (prefers-color-scheme: dark) {
   .vercelLogo {
     filter: invert(1);
+    margin: 0;
+    /* background-color: 'red'; */
   }
 
   /* .logo {
