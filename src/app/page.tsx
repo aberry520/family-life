@@ -64,7 +64,7 @@ export default function Home() {
               href='https://www.instagram.com/familylifechurchsc/'
               target='_blank'
               rel='noopener noreferrer'
-              style={{ marginLeft: 10 }}
+              style={{ marginLeft: width > 700 ? 10 : 0 }}
             >
               <img
                 src='/instagram-rd-trs.png'
@@ -77,7 +77,7 @@ export default function Home() {
               href='https://www.facebook.com/people/Family-Life-Church-Iva/61558998081855/'
               target='_blank'
               rel='noopener noreferrer'
-              style={{ marginLeft: 10 }}
+              style={{ marginLeft: width > 700 ? 10 : 0 }}
             >
               <img
                 src='/facebook-rd-trs.png'
@@ -90,7 +90,7 @@ export default function Home() {
               href='mailto:mike@familylifechurchsc.com'
               target='_blank'
               rel='noopener noreferrer'
-              style={{ marginLeft: 10 }}
+              style={{ marginLeft: width > 700 ? 10 : 0 }}
             >
               <img
                 src='/email-rd-trs.png'
@@ -99,6 +99,21 @@ export default function Home() {
                 width={'50em'}
               />
             </a>
+            {width < 700 && (
+              <a
+                href='https://www.google.com/maps/search/?api=1&query=2640%20Elberton%20Highway%2C%20Iva%2C%20SC%2029655'
+                target='_blank'
+                rel='noopener noreferrer'
+                style={{ marginLeft: width > 700 ? 10 : 0 }}
+              >
+                <img
+                  src='/navigation-rd-trs.png'
+                  alt='Vercel Logo'
+                  className={styles.vercelLogo}
+                  width={'50em'}
+                />
+              </a>
+            )}
           </div>
         </div>
 
@@ -149,11 +164,21 @@ export default function Home() {
         </div>
 
         <div
-        // className={styles.grid}
-        // style={{ height: '20%', width: '100%' }}
+          // className={styles.grid}
+          style={{
+            height: '20%',
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexDirection: 'column',
+          }}
         >
           <p>Statement of faith here</p>
-          <a href='geo:124.028582,-29.201930' target='_blank'>
+          <a
+            href='https://www.google.com/maps/search/?api=1&query=2640%20Elberton%20Highway%2C%20Iva%2C%20SC%2029655'
+            target='_blank'
+          >
             Click here for map
           </a>
         </div>
