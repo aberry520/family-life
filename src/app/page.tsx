@@ -133,10 +133,10 @@ export default function Home() {
               interval={5000}
             >
               <div>
-                <h2>Mission: 'By the Word of God'</h2>
+                <h2>{`Mission: "By the Word of God"`}</h2>
               </div>
               <div>
-                <h2>Vision: 'Family finding life in Christ' </h2>
+                <h2>{`Vision: "Family finding life in Christ"`} </h2>
               </div>
               <div>
                 <h2>
