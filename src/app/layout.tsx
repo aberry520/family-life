@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import localfont from "next/font/local";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const sinkinSans = localfont({ src: "/sinkinsans-600semibold-webfont.woff" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
