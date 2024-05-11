@@ -76,8 +76,8 @@
 
 .center {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  /* justify-content: space-between; */
+  flex-direction: column;
   align-items: center;
   position: relative;
   padding: 4rem 0;
@@ -198,11 +198,11 @@
     /* pointer-events: none; */
     inset: auto 0 0;
     padding: 2rem;
-    height: 200px;
+    min-height: 15%;
     background: linear-gradient(
       to bottom,
       transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
+      rgb(var(--background-end-rgb)) 20%
     );
     z-index: 1;
   }
@@ -239,4 +239,13 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+@font-face {
+    font-family: 'sinkin_sans600_semibold';
+    src: 
+         url('../../public/fonts/sinkinsans_600semibold_macroman/SinkinSans-600SemiBold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
