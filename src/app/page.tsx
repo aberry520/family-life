@@ -1,6 +1,6 @@
 'use client';
 import styles from "./page.module.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
 import useWindowDimensions from "../../utils";
 export default function Home() {
   const { height, width } = useWindowDimensions();
