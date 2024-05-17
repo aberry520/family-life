@@ -3,9 +3,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 3rem;
   min-height: 100vh;
-  background-color: #b3c5cf;
+  background-image:  url('/svg/nnnoise (2).svg');
 }
 
 .description {
@@ -198,11 +198,13 @@
     /* pointer-events: none; */
     inset: auto 0 0;
     padding: 2rem;
-    min-height: 15%;
+    padding-top: 4rem;
+    min-height: 10%;
+    max-height: 15%;
     background: linear-gradient(
       to bottom,
       transparent 0%,
-      rgb(var(--background-end-rgb)) 20%
+      #597d92 20%
     );
     z-index: 1;
   }
