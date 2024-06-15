@@ -9,14 +9,14 @@ export default function HomePage() {
       <main
         className={styles.main}
         style={{ paddingBottom: width > 700 ? undefined : "30%" }}>
-        <div className={styles.description}>
+        <div className={styles.header}>
           {width > 700 && (
             <>
               <div style={{ width: "20%" }}>
                 <img
                   src="/icons/familyLife-logo.png"
                   alt="Family Life Church Logo"
-                  style={{ width: width > 700 ? "4em" : "8em" }} // style={{ position: 'absolute', opacity: 0.1, zIndex: 0 }}
+                  style={{ width: width > 700 ? "4em" : "8em" }}
                 />
               </div>
             </>
@@ -65,12 +65,12 @@ export default function HomePage() {
             </a>
             {width < 700 && (
               <a
-                href="https://www.google.com/maps/search/?api=1&query=2640%20Elberton%20Highway%2C%20Iva%2C%20SC%2029655"
+                href="https://familylifechurchsc.churchcenter.com/giving"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ marginLeft: width > 700 ? 10 : 0 }}>
                 <img
-                  src="/icons/navigation-rd-trs.png"
+                  src="/icons/donate.png"
                   alt="Vercel Logo"
                   className={styles.vercelLogo}
                   style={{ width: width > 700 ? "4em" : "8em" }}
@@ -113,48 +113,67 @@ export default function HomePage() {
             }}>
             BY THE WORD OF GOD
           </h2>
+          {/* <p>
+            A new church plant in Iva, SC!
+            <br /> Here to serve Jesus and this community!
+          </p> */}
+          <div
+            style={{
+              width: "100%",
+              flexDirection: "row",
+              //   backgroundColor: "red",
+              display: "flex",
+              justifyContent: "center",
+            }}>
+            <div
+              // className={styles.grid}
+              style={{
+                // height: "20%",
+                // width: "100%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+                zIndex: 1,
+                marginRight: "4em",
+                // backgroundColor: "#0b4465",
+              }}>
+              <p style={{ fontSize: "2em", fontWeight: "bold" }}>Sunday 10am</p>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=205%20W%20Jackson%20St%20Iva%2C%20SC%2029655"
+                target="_blank"
+                style={{ fontSize: "1em", fontFamily: "sinkin_sans600_semibold" }}>
+                Iva Civic Center
+              </a>
+            </div>
+            <div
+              // className={styles.grid}
+              style={{
+                // height: "20%",
+                // width: "100%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+                zIndex: 1,
+                margin: "1em 0",
+              }}>
+              <p style={{ fontSize: "2em", fontWeight: "bold" }}>Wednesday 7pm</p>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=2640%20Elberton%20Highway%2C%20Iva%2C%20SC%2029655"
+                target="_blank"
+                style={{ fontSize: "1em", fontFamily: "sinkin_sans600_semibold" }}>
+                Breaking Bread Farms
+              </a>
+            </div>
+          </div>
         </div>
-        <div>
-          <div
-            // className={styles.grid}
-            style={{
-              // height: "20%",
-              width: "100%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexDirection: "column",
-              zIndex: 1,
-              // backgroundColor: "#0b4465",
-            }}>
-            <p style={{ fontSize: "3em", fontWeight: "bold" }}>Sunday 10am</p>
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=205%20W%20Jackson%20St%20Iva%2C%20SC%2029655"
-              target="_blank"
-              style={{ fontSize: "1.5em", fontFamily: "sinkin_sans600_semibold" }}>
-              Iva Civic Center
-            </a>
-          </div>
-          <div
-            // className={styles.grid}
-            style={{
-              // height: "20%",
-              width: "100%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexDirection: "column",
-              zIndex: 1,
-              margin: "1em 0",
-            }}>
-            <p style={{ fontSize: "3em", fontWeight: "bold" }}>Wednesday 7pm</p>
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=2640%20Elberton%20Highway%2C%20Iva%2C%20SC%2029655"
-              target="_blank"
-              style={{ fontSize: "1.5em", fontFamily: "sinkin_sans600_semibold" }}>
-              Breaking Bread Farms
-            </a>
-          </div>
+        <div className={styles.footer}>
+          <p>
+            A new church plant in Iva, SC!
+            <br /> Here to serve Jesus and this community!
+            <br /> Colossians 3:16-17 (ESV)
+          </p>
         </div>
       </main>
     </>
