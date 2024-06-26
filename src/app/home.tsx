@@ -6,6 +6,7 @@ export default function HomePage() {
   const { height, width } = useWindowDimensions();
   return (
     <>
+      <h1 className="text-3xl font-bold underline bg-slate-600">Hello, Next.js!</h1>
       <main
         className={styles.main}
         style={{ paddingBottom: width > 700 ? undefined : "30%" }}>
