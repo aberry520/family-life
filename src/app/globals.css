@@ -42,5 +42,14 @@
 }
 /* styles.css */
 .fade-bg {
-  transition: background-image 2s ease-in-out;
+  transition: background-image 3s ease-in-out 3s;
+  
+}
+@font-face {
+    font-family: 'sinkin_sans600_semibold';
+    src: 
+         url('../../public/fonts/sinkinsans_600semibold_macroman/SinkinSans-600SemiBold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }

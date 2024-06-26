@@ -31,62 +31,105 @@ import { useEffect, useState } from "react";
 
 export default function HomePage1() {
   const [currentBgUrl, setCurrentBgUrl] = useState("/images/waterday/IMG_8130.JPG");
+  const [currentIndex, setCurrentIndex] = useState(1);
 
   useEffect(() => {
-    let currentIndex = 0;
     const backgrounds = [
       "/images/waterday/IMG_8130.JPG",
       "/images/waterday/IMG_8192.JPG",
-      "/images/waterday/IMG_8215.JPG",
-      "/images/waterday/IMG_8219.JPG",
       "/images/waterday/IMG_8240.JPG",
       "/images/waterday/IMG_8293.JPG",
-      "/images/waterday/IMG_8319.JPG",
       "/images/waterday/IMG_8337.JPG",
       "/images/waterday/IMG_8398.JPG",
       "/images/waterday/IMG_8538.JPG",
       "/images/waterday/IMG_8879.JPG",
       "/images/waterday/IMG_8919.JPG",
-      "/images/waterday/IMG_8951.JPG",
-      "/images/waterday/IMG_8955.JPG",
     ];
 
     const changeBackground = () => {
-      const showDuration = 2000; // Show each image for 2 seconds
-      const pauseDuration = 8000; // Pause for 8 seconds
-
-      setCurrentBgUrl(backgrounds[currentIndex]);
+      console.log("Changing background");
       setTimeout(() => {
-        currentIndex++;
-        if (currentIndex >= backgrounds.length) {
-          currentIndex = 0; // Loop back to the start
+        setCurrentBgUrl(backgrounds[currentIndex]);
+        setCurrentIndex(currentIndex + 1);
+        if (currentIndex >= backgrounds.length - 1) {
+          setCurrentIndex(0); // Loop back to the start
         }
-        changeBackground(); // Call the function again after the pause
-      }, showDuration + pauseDuration);
+      }, 12000);
     };
 
-    changeBackground(); // Start the animation
-  }, []);
+    changeBackground();
+  }, [currentBgUrl]);
   return (
     <div className="flex flex-col min-h-[100dvh]">
+      <header
+        className="py-4 px-6 flex items-center justify-between w-screen"
+        style={{ color: "#0b4465", backgroundColor: "rgba(255, 255, 255, 0.4);", position: "absolute" }}>
+        <Link
+          href="#"
+          className="flex items-center gap-2"
+          prefetch={false}>
+          <img
+            src="/icons/familyLife-logo.png"
+            alt="Family Life Church Logo"
+            className="h-8 w-8"
+          />
+          <span
+            className="text-l font-bold sm:text-xl md:text-2xl"
+            style={{ fontFamily: "sinkin_sans600_semibold", color: "#0b4465" }}>
+            FAMILY LIFE CHURCH
+          </span>
+        </Link>
+        <nav className="hidden md:flex items-center gap-6">
+          <Link
+            href="#"
+            className="hover:underline underline-offset-4"
+            prefetch={false}>
+            About
+          </Link>
+          <Link
+            href="#"
+            className="hover:underline underline-offset-4"
+            prefetch={false}>
+            Services
+          </Link>
+          <Link
+            href="#"
+            className="hover:underline underline-offset-4"
+            prefetch={false}>
+            Contact
+          </Link>
+        </nav>
+        <Button
+          variant="secondary"
+          className="md:hidden">
+          {/* <MenuIcon className="h-6 w-6" /> */}
+          <span className="sr-only">Toggle menu</span>
+        </Button>
+      </header>
       <section
-        className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-cover bg-center flex justify-center fade-bg"
-        style={{ backgroundImage: `url(${currentBgUrl})` }}>
+        className="w-full pb-12 pt-20 md:pb-24 md:pt-32 lg:pb-32 lg:pt-40 xl:pb-48 xl:pt-56 bg-cover bg-center flex justify-center items-center"
+        style={{
+          backgroundImage: `url(${currentBgUrl})`,
+          transition: "background-image 3s ease-in-out 3s",
+          height: "80vh",
+        }}>
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center text-center space-y-4">
-            <h1 className="text-4xl font-bold tracking-tighter text-primary-foreground sm:text-5xl md:text-6xl">
-              Welcome to Our Church
+            <h1
+              className="text-2xl font-bold tracking-normal text-primary-foreground sm:text-4xl md:text-6xl drop-shadow-lg"
+              style={{ fontFamily: "sinkin_sans600_semibold" }}>
+              BY THE WORD OF GOD
             </h1>
-            <p className="max-w-[600px] text-primary-foreground md:text-xl">
-              Discover the warmth and community of our vibrant church. Join us for worship, fellowship, and spiritual
-              growth.
-            </p>
             <Link
               href="#"
               className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
               prefetch={false}>
               Learn More
             </Link>
+            <p className="max-w-[600px] text-primary-foreground md:text-xl drop-shadow-lg">
+              A new church plant in Iva, SC!
+              <br /> Here to serve Jesus and this community!
+            </p>
           </div>
         </div>
       </section>
