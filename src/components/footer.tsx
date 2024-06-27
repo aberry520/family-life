@@ -4,8 +4,10 @@
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
 import Link from "next/link";
+import useWindowDimensions from "../../utils";
 
 export default function Footer() {
+  const { width } = useWindowDimensions();
   function FacebookIcon(props) {
     return (
       <svg
@@ -106,10 +108,8 @@ export default function Footer() {
         <div className="relative mb-8">
           <div className="absolute inset-0 z-[-1] bg-[url('/background-pattern.svg')] bg-repeat opacity-20" />
           <p className="text-lg italic text-[#555] leading-relaxed">
-            <span className="font-calligraphy">
-              "Let the word of Christ dwell in you richly, teaching and\n admonishing one another in all wisdom, singing
-              psalms and hymns\n and spiritual songs, with thankfulness in your hearts to God. And\n whatever you do, in
-              word or deed, do everything in the name of\n the Lord Jesus, giving thanks to God the Father through him."
+            <span className="font-calligraphy text-s">
+              {`"Let the word of Christ dwell in you richly, teaching and\n admonishing one another in all wisdom, singing psalms and hymns\n and spiritual songs, with thankfulness in your hearts to God. And\n whatever you do, in word or deed, do everything in the name of\n the Lord Jesus, giving thanks to God the Father through him."`}
             </span>
             <br />
             <span className="text-sm font-medium">- Colossians 3:16-17 ESV</span>
@@ -120,29 +120,29 @@ export default function Footer() {
             href="#"
             className="inline-flex items-center justify-center  rounded-xl bg-[#cccccc] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#555]"
             prefetch={false}>
-            <FacebookIcon className="mr-2 h-4 w-4" />
-            Facebook
+            <FacebookIcon className="mr-2 h-4 w-4 max-sm:mr-0" />
+            {width > 640 && "Facebook"}
           </Link>
           <Link
             href="#"
             className="inline-flex items-center justify-center  rounded-xl bg-[#cccccc] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#555]"
             prefetch={false}>
-            <TwitterIcon className="mr-2 h-4 w-4" />
-            Twitter
+            <TwitterIcon className="mr-2 h-4 w-4 max-sm:mr-0" />
+            {width > 640 && "Twitter"}
           </Link>
           <Link
             href="#"
             className="inline-flex items-center justify-center  rounded-xl bg-[#cccccc] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#555]"
             prefetch={false}>
-            <InstagramIcon className="mr-2 h-4 w-4" />
-            Instagram
+            <InstagramIcon className="mr-2 h-4 w-4 max-sm:mr-0" />
+            {width > 640 && "Instagram"}
           </Link>
           <Link
             href="#"
-            className="inline-flex items-center justify-center rounded-xl bg-[#cccccc] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#555]"
+            className="inline-flex items-center justify-center rounded-xl bg-[#cccccc] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#555] "
             prefetch={false}>
-            <MailIcon className="mr-2 h-4 w-4" />
-            Contact
+            <MailIcon className="mr-2 h-4 w-4 max-sm:mr-0" />
+            {width > 640 && "Contact"}
           </Link>
         </div>
       </div>
