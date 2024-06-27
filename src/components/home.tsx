@@ -29,6 +29,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import Header from "./header";
+import Footer from "./footer";
 
 export default function HomePage1() {
   const [currentBgUrl, setCurrentBgUrl] = useState("/images/waterday/IMG_8130.JPG");
@@ -165,7 +166,7 @@ export default function HomePage1() {
           </div>
         </div>
       </section>
-      <section className="w-full py-12 md:py-24 lg:py-32 border-t flex justify-center">
+      <section className="w-full py-12 md:py-24 lg:py-32 flex justify-center">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
           <div className="space-y-3">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Get in Touch</h2>
@@ -194,6 +195,7 @@ export default function HomePage1() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
