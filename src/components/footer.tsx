@@ -8,7 +8,7 @@ import useWindowDimensions from "../../utils";
 
 export default function Footer() {
   const { width } = useWindowDimensions();
-  function FacebookIcon(props) {
+  function FacebookIcon(props: any) {
     return (
       <svg
         {...props}
@@ -26,7 +26,7 @@ export default function Footer() {
     );
   }
 
-  function InstagramIcon(props) {
+  function InstagramIcon(props: any) {
     return (
       <svg
         {...props}
@@ -58,7 +58,7 @@ export default function Footer() {
     );
   }
 
-  function MailIcon(props) {
+  function MailIcon(props: any) {
     return (
       <svg
         {...props}
@@ -83,7 +83,7 @@ export default function Footer() {
     );
   }
 
-  function TwitterIcon(props) {
+  function TwitterIcon(props: any) {
     return (
       <svg
         {...props}
