@@ -28,6 +28,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import Header from "./header";
+import Footer from "./footer";
 
 export default function HomePage1() {
   const [currentBgUrl, setCurrentBgUrl] = useState("/images/waterday/IMG_8130.JPG");
@@ -61,56 +63,11 @@ export default function HomePage1() {
   }, [currentBgUrl]);
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <header
-        className="py-4 px-6 flex items-center justify-between w-screen"
-        style={{ color: "#0b4465", backgroundColor: "rgba(255, 255, 255, 0.4);", position: "absolute" }}>
-        <Link
-          href="#"
-          className="flex items-center gap-2"
-          prefetch={false}>
-          <img
-            src="/icons/familyLife-logo.png"
-            alt="Family Life Church Logo"
-            className="h-8 w-8"
-          />
-          <span
-            className="text-l font-bold sm:text-xl md:text-2xl"
-            style={{ fontFamily: "sinkin_sans600_semibold", color: "#0b4465" }}>
-            FAMILY LIFE CHURCH
-          </span>
-        </Link>
-        <nav className="hidden md:flex items-center gap-6">
-          <Link
-            href="#"
-            className="hover:underline underline-offset-4"
-            prefetch={false}>
-            About
-          </Link>
-          <Link
-            href="#"
-            className="hover:underline underline-offset-4"
-            prefetch={false}>
-            Services
-          </Link>
-          <Link
-            href="#"
-            className="hover:underline underline-offset-4"
-            prefetch={false}>
-            Contact
-          </Link>
-        </nav>
-        <Button
-          variant="secondary"
-          className="md:hidden">
-          {/* <MenuIcon className="h-6 w-6" /> */}
-          <span className="sr-only">Toggle menu</span>
-        </Button>
-      </header>
+      <Header />
       <section
-        className="w-full pb-12 pt-20 md:pb-24 md:pt-32 lg:pb-32 lg:pt-40 xl:pb-48 xl:pt-56 bg-cover bg-center flex justify-center items-center"
+        className="w-full pb-12 pt-20 md:pb-24 md:pt-32 lg:pb-32 lg:pt-40 xl:pb-48 xl:pt-56 bg-cover bg-center flex justify-center items-center fade-bg"
         style={{
           backgroundImage: `url(${currentBgUrl})`,
-          transition: "background-image 3s ease-in-out 3s",
           height: "80vh",
         }}>
         <div className="container px-4 md:px-6">
@@ -209,7 +166,7 @@ export default function HomePage1() {
           </div>
         </div>
       </section>
-      <section className="w-full py-12 md:py-24 lg:py-32 border-t flex justify-center">
+      <section className="w-full py-12 md:py-24 lg:py-32 flex justify-center">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
           <div className="space-y-3">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Get in Touch</h2>
@@ -238,6 +195,7 @@ export default function HomePage1() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
