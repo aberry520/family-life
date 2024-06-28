@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header
       className="py-4 px-6 flex items-center justify-between w-screen"
-      style={{ color: "#0b4465", backgroundColor: "rgba(255, 255, 255, 0.4);", position: "absolute" }}>
+      style={{ color: "#0b4465", backgroundColor: "rgba(255, 255, 255, 0.4)", position: "absolute" }}>
       <Link
         href="#"
         className="flex items-center gap-2"
