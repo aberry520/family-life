@@ -144,7 +144,7 @@ export function About() {
               <p className="text-muted-foreground">
                 Our vision is to be a family that is finding our life in Jesus alone. He is our hope, rest, assurance,
                 joy, salvation, and Lord. We have died to our old selves, and our life is hidden with Christ. No matter
-                where you are in your journey, let's take your next step in finding life in Christ together.
+                where you are in your journey, let&apos;s take your next step in finding life in Christ together.
               </p>
             </CardContent>
           </Card>
