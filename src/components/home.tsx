@@ -4,6 +4,7 @@ import Contact from "./contact";
 import Footer from "./footer";
 import Header from "./header";
 import { About } from "./about";
+import Values from "./values";
 
 export default function Home() {
   const [currentBgUrl, setCurrentBgUrl] = useState("/images/waterday/IMG_8130.JPG");
@@ -65,6 +66,7 @@ export default function Home() {
         </div>
       </section>
       <About />
+      <Values />
       <section className="w-full py-12 md:py-24 lg:py-32 bg-muted flex justify-center">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
