@@ -19,8 +19,8 @@ export default function Values() {
               <h3 className="text-xl font-semibold">Scriptural Fidelity</h3>
             </div>
             <p className="text-muted-foreground">
-              Scripture is our rule. If we cannot base it upon Scripture then we don't do it. We strive to do all that
-              Scripture teaches and nothing that it doesn't. This applies to all areas of church and life.
+              Scripture is our rule. If we cannot base it upon Scripture then we don&apos;t do it. We strive to do all
+              that Scripture teaches and nothing that it doesn&apos;t. This applies to all areas of church and life.
             </p>
           </div>
           <div className="grid gap-4">
@@ -74,7 +74,7 @@ export default function Values() {
             <p className="text-muted-foreground">
               We believe that church should be simple (though not easy). We are not called to do everything, fill every
               calendar slot, or run every program. However, Scripture does call us to do a few things very well. If we
-              can't do it faithfully and biblically then we don't need to do it.
+              can&apos;t do it faithfully and biblically then we don&apos;t need to do it.
             </p>
           </div>
           <div className="grid gap-4">
