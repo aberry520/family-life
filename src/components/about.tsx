@@ -99,7 +99,7 @@ export function About() {
             </Link>
           </div>
           <img
-            src="/placeholder.svg"
+            src="/images/family3.JPG"
             width="550"
             height="550"
             alt="About Us"

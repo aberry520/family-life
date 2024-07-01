@@ -14,7 +14,7 @@ export default function Values() {
           <div className="grid gap-4">
             <div className="flex items-center gap-4">
               <div className="bg-secondary rounded-md p-3 flex items-center justify-center">
-                <BookOpenIcon className="w-6 h-6 text-secondary-foreground" />
+                <BookOpenIcon className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-xl font-semibold">Scriptural Fidelity</h3>
             </div>
@@ -26,7 +26,7 @@ export default function Values() {
           <div className="grid gap-4">
             <div className="flex items-center gap-4">
               <div className="bg-secondary rounded-md p-3 flex items-center justify-center">
-                <CompassIcon className="w-6 h-6 text-secondary-foreground" />
+                <CompassIcon className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-xl font-semibold">Missionality</h3>
             </div>
@@ -39,7 +39,7 @@ export default function Values() {
           <div className="grid gap-4">
             <div className="flex items-center gap-4">
               <div className="bg-secondary rounded-md p-3 flex items-center justify-center">
-                <UsersIcon className="w-6 h-6 text-secondary-foreground" />
+                <UsersIcon className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-xl font-semibold">Family</h3>
             </div>
@@ -52,7 +52,7 @@ export default function Values() {
           <div className="grid gap-4">
             <div className="flex items-center gap-4">
               <div className="bg-secondary rounded-md p-3 flex items-center justify-center">
-                <BookIcon className="w-6 h-6 text-secondary-foreground" />
+                <BookIcon className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-xl font-semibold">Theology</h3>
             </div>
@@ -67,7 +67,7 @@ export default function Values() {
           <div className="grid gap-4">
             <div className="flex items-center gap-4">
               <div className="bg-secondary rounded-md p-3 flex items-center justify-center">
-                <MinimizeIcon className="w-6 h-6 text-secondary-foreground" />
+                <MinimizeIcon className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-xl font-semibold">Simplicity</h3>
             </div>
@@ -80,7 +80,7 @@ export default function Values() {
           <div className="grid gap-4">
             <div className="flex items-center gap-4">
               <div className="bg-secondary rounded-md p-3 flex items-center justify-center">
-                <TargetIcon className="w-6 h-6 text-secondary-foreground" />
+                <TargetIcon className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-xl font-semibold">Intentionality</h3>
             </div>
