@@ -4,6 +4,7 @@ import Contact from "./contact";
 import Footer from "./footer";
 import Header from "./header";
 import { About } from "./about";
+import Values from "./values";
 
 export default function Home() {
   const [currentBgUrl, setCurrentBgUrl] = useState("/images/waterday/IMG_8130.JPG");
@@ -65,6 +66,7 @@ export default function Home() {
         </div>
       </section>
       <About />
+      <Values />
       <section className="w-full py-12 md:py-24 lg:py-32 bg-muted flex justify-center">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -79,11 +81,12 @@ export default function Home() {
           </div>
           <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
             <img
-              src="/images/preaching.jpeg"
+              src="https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/448947128_122122212296299936_349966917171525388_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8g0dJmYc_oUQ7kNvgFEVW-l&_nc_ht=scontent-atl3-1.xx&oh=00_AYB9mghqZP3Z7vjlCq_NZrfB6xMT68oiRa1nRRsuZxgVZw&oe=66863AA6"
               width="550"
-              height="310"
+              height="550"
               alt="Event"
-              className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+              className="mx-auto aspect-video overflow-hidden rounded-xl object-contain object-center sm:w-full lg:order-last"
+              // style={{ backgroundColor: "red", aspectRatio: "3/2" }}
             />
             <div className="flex flex-col justify-center space-y-4">
               <ul className="grid gap-6">
