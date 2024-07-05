@@ -49,6 +49,12 @@ export default function Header() {
             prefetch={false}>
             Contact
           </Link>
+          <Link
+            href="https://familylifechurchsc.churchcenter.com/giving"
+            className="hover:underline underline-offset-4"
+            prefetch={false}>
+            Giving
+          </Link>
         </nav>
         <Button
           type="button"
@@ -83,6 +89,13 @@ export default function Header() {
             className="hover:underline underline-offset-4"
             prefetch={false}>
             Contact
+          </Link>
+          <Link
+            href="https://familylifechurchsc.churchcenter.com/giving"
+            onClick={() => setMenuOpen(false)}
+            className="hover:underline underline-offset-4"
+            prefetch={false}>
+            Giving
           </Link>
         </nav>
       )}
