@@ -16,8 +16,8 @@ export default function Landing() {
     "/images/waterday/IMG_8919.JPG",
   ];
   const randomIndex = Math.floor(Math.random() * backgrounds.length);
-  const [currentBgUrl, setCurrentBgUrl] = useState(backgrounds[randomIndex]);
-  const [currentIndex, setCurrentIndex] = useState(randomIndex + 1);
+  const [currentBgUrl, setCurrentBgUrl] = useState("/images/waterday/IMG_8130.JPG");
+  const [currentIndex, setCurrentIndex] = useState(1);
 
   useEffect(() => {
     if (width > 768) {
@@ -37,7 +37,7 @@ export default function Landing() {
     <section
       className="w-full pb-12 pt-20 md:pb-24 md:pt-32 lg:pb-32 lg:pt-40 xl:pb-48 xl:pt-56 bg-cover bg-center flex justify-center items-center fade-bg"
       style={{
-        backgroundImage: `url(${currentBgUrl})`,
+        backgroundImage: `url(${width > 768 ? currentBgUrl : backgrounds[randomIndex]})`,
         height: "80vh",
       }}>
       <div className="container px-4 md:px-6">
