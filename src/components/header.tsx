@@ -6,10 +6,18 @@ import { time } from "console";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
-    setTimeout(() => {
-      setMenuOpen(false);
-    }, 10000);
-  }, [menuOpen === true]);
+    let timeoutId: NodeJS.Timeout;
+
+    if (menuOpen) {
+      timeoutId = setTimeout(() => {
+        setMenuOpen(false);
+      }, 10000);
+    }
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, [menuOpen]);
   return (
     <>
       <header
@@ -62,7 +70,6 @@ export default function Header() {
           variant="secondary"
           className="md:hidden">
           <MenuIcon className="h-6 w-6" />
-          <span className="sr-only">Toggle menu</span>
         </Button>
       </header>
       {menuOpen && (
