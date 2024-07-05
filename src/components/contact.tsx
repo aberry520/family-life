@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
@@ -9,6 +9,8 @@ export default function Contact() {
     email: "",
     message: "",
   });
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
   const handleSubmit = async (event: any) => {
     event.preventDefault();
@@ -35,8 +37,16 @@ export default function Contact() {
         email: "",
         message: "",
       });
+      setSuccess(result.message);
+      setTimeout(() => {
+        setSuccess("");
+      }, 5000); // Reset success after 5 seconds
     } else {
+      setError(result.message);
       console.error(result);
+      setTimeout(() => {
+        setError("");
+      }, 5000); // Reset error after 5 seconds
     }
   };
 
@@ -90,6 +100,20 @@ export default function Contact() {
               required={true}
             />
             <Button type="submit">Submit</Button>
+            {error && (
+              <p
+                className="text-red-500"
+                style={{ color: "red" }}>
+                {error}
+              </p>
+            )}
+            {success && (
+              <p
+                className="text-green-500"
+                style={{ color: "green" }}>
+                {success}
+              </p>
+            )}
           </form>
         </div>
       </div>
