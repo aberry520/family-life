@@ -1,36 +1,38 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import useWindowDimensions from "../../utils";
 
 export default function Landing() {
-  const [currentBgUrl, setCurrentBgUrl] = useState("/images/waterday/IMG_8130.JPG");
-  const [currentIndex, setCurrentIndex] = useState(1);
+  const { width } = useWindowDimensions();
+  const backgrounds = [
+    "/images/waterday/IMG_8130.JPG",
+    "/images/waterday/IMG_8192.JPG",
+    "/images/waterday/IMG_8240.JPG",
+    "/images/waterday/IMG_8293.JPG",
+    "/images/waterday/IMG_8337.JPG",
+    "/images/waterday/IMG_8398.JPG",
+    "/images/waterday/IMG_8538.JPG",
+    "/images/waterday/IMG_8879.JPG",
+    "/images/waterday/IMG_8919.JPG",
+  ];
+  const randomIndex = Math.floor(Math.random() * backgrounds.length);
+  const [currentBgUrl, setCurrentBgUrl] = useState(backgrounds[randomIndex]);
+  const [currentIndex, setCurrentIndex] = useState(randomIndex + 1);
 
   useEffect(() => {
-    const backgrounds = [
-      "/images/waterday/IMG_8130.JPG",
-      "/images/waterday/IMG_8192.JPG",
-      "/images/waterday/IMG_8240.JPG",
-      "/images/waterday/IMG_8293.JPG",
-      "/images/waterday/IMG_8337.JPG",
-      "/images/waterday/IMG_8398.JPG",
-      "/images/waterday/IMG_8538.JPG",
-      "/images/waterday/IMG_8879.JPG",
-      "/images/waterday/IMG_8919.JPG",
-    ];
-
-    const changeBackground = () => {
-      console.log("Changing background");
-      setTimeout(() => {
-        setCurrentBgUrl(backgrounds[currentIndex]);
-        setCurrentIndex(currentIndex + 1);
-        if (currentIndex >= backgrounds.length - 1) {
-          setCurrentIndex(0); // Loop back to the start
-        }
-      }, 12000);
-    };
-
-    changeBackground();
-  }, [currentBgUrl]);
+    if (width > 768) {
+      const changeBackground = () => {
+        setTimeout(() => {
+          setCurrentBgUrl(backgrounds[currentIndex]);
+          setCurrentIndex(currentIndex + 1);
+          if (currentIndex >= backgrounds.length - 1) {
+            setCurrentIndex(0); // Loop back to the start
+          }
+        }, 12000);
+      };
+      changeBackground();
+    }
+  }, [currentBgUrl, width]);
   return (
     <section
       className="w-full pb-12 pt-20 md:pb-24 md:pt-32 lg:pb-32 lg:pt-40 xl:pb-48 xl:pt-56 bg-cover bg-center flex justify-center items-center fade-bg"
