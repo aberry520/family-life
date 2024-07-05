@@ -41,9 +41,14 @@ export function About() {
               <p className="text-muted-foreground">
                 We believe that the Bible is the inerrant Word of God and that it is the final authority in all matters
                 of faith and practice. We believe in the Trinity, the deity of Christ, and the necessity of salvation
-                through faith in Him. This and much more is covered in the Baptist Faith and Message 2000. (link to
-                https://bfm.sbc.net/bfm2000/ )
+                through faith in Him. This and much more is covered in the Baptist Faith and Message 2000.
               </p>
+              <Link
+                href="https://bfm.sbc.net/bfm2000/"
+                className="flex h-10 w-48 my-2 md:mx-auto items-center text-center justify-center rounded-md bg-primary px-4 text-xs font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                prefetch={false}>
+                Baptist Faith & Message
+              </Link>
             </CardContent>
           </Card>
           <Card>

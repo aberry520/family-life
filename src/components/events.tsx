@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Events() {
   return (
     <section
@@ -21,7 +23,6 @@ export default function Events() {
             height="550"
             alt="Event"
             className="mx-auto aspect-video overflow-hidden rounded-xl object-contain object-center sm:w-full lg:order-last"
-            // style={{ backgroundColor: "red", aspectRatio: "3/2" }}
           />
           <div className="flex flex-col justify-center space-y-4">
             <ul className="grid gap-6">
@@ -29,7 +30,13 @@ export default function Events() {
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Sunday Worship: 10 AM</h3>
                   <p className="text-muted-foreground">
-                    Join us every Sunday at the Iva Civic Center for our weekly worship service.
+                    Join us every Sunday at the{" "}
+                    <Link
+                      href="https://www.google.com/maps/search/?api=1&query=205+W+Jackson+St%2C+Iva%2C+SC+29655"
+                      className="underline underline-offset-4 text-primary">
+                      Iva Civic Center
+                    </Link>{" "}
+                    for our weekly worship service.
                   </p>
                 </div>
               </li>
@@ -37,8 +44,13 @@ export default function Events() {
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Wednesday Night Study: 7 PM</h3>
                   <p className="text-muted-foreground">
-                    Hosted every Wednesday night at Breaking Bread Farms. Our mid-week study is a great way to grow in
-                    your faith and understanding of the gospel.
+                    Hosted every Wednesday night at{" "}
+                    <Link
+                      href="https://www.google.com/maps/search/?api=1&query=2640+Elberton+Hwy%2C+Iva%2C+SC+29655"
+                      className="underline underline-offset-4 text-primary">
+                      Breaking Bread Farms.
+                    </Link>{" "}
+                    Our mid-week study is a great way to grow in your faith and understanding of the gospel.
                   </p>
                 </div>
               </li>
