@@ -14,7 +14,7 @@ export function About() {
               spreading the love of God and making a positive impact in our local neighborhood and beyond.
             </p>
             <Link
-              href="#"
+              href="#values"
               className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
               prefetch={false}>
               Learn More
