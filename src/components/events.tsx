@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Events() {
   return (
@@ -17,13 +19,33 @@ export default function Events() {
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-          <img
-            src="/images/family-theology.jpeg"
-            width="550"
-            height="550"
-            alt="Event"
-            className="mx-auto aspect-video overflow-hidden rounded-xl object-contain object-center sm:w-full lg:order-last"
-          />
+          <div style={{ margin: "0 auto", padding: 20 }}>
+            <Carousel
+              autoPlay
+              infiniteLoop
+              useKeyboardArrows={false}
+              width={"100%"}
+              showThumbs={false}
+              showIndicators={false}
+              showArrows={false}
+              showStatus={false}>
+              <div
+                key={1}
+                style={{ minWidth: "100%" }}>
+                <img src="images/bible-study.JPEG" />
+              </div>
+              <div
+                key={2}
+                style={{ minWidth: "100%" }}>
+                <img src="images/frog.JPEG" />
+              </div>
+              <div
+                key={3}
+                style={{ minWidth: "100%" }}>
+                <img src="images/water-day.JPEG" />
+              </div>
+            </Carousel>
+          </div>
           <div className="flex flex-col justify-center space-y-4">
             <ul className="grid gap-6">
               <li>
