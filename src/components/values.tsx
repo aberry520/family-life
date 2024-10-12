@@ -59,7 +59,7 @@ export default function Values() {
               <h3 className="text-xl font-semibold">Theology</h3>
             </div>
             <p className="text-muted-foreground">
-              We are convinced that a right understand of God leads to right worship and practice. As we study the
+              We are convinced that a right understanding of God leads to right worship and practice. As we study the
               deeper things of who God is and how He works, we believe that will draw people to Him for salvation as
               well as bring people to their knees in adoration. Theology, evangelism, discipleship, and practicality are
               not mutually exclusive, but rather a biblical theology motivates, empowers, and guides each of these
