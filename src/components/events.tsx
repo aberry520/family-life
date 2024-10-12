@@ -37,23 +37,32 @@ export default function Events() {
               </li>
               <li>
                 <div className="grid gap-1">
-                  <h3 className="text-xl font-bold">Wednesday Night Study: 7 PM</h3>
+                  <h3 className="text-xl font-bold">Foundations: 9:45 AM</h3>
                   <p className="text-muted-foreground">
-                    Hosted every Wednesday night at{" "}
-                    <Link
-                      href="https://www.google.com/maps/search/?api=1&query=2640+Elberton+Hwy%2C+Iva%2C+SC+29655"
-                      className="underline underline-offset-4 text-primary">
-                      Breaking Bread Farms.
-                    </Link>{" "}
-                    Our mid-week study is a great way to grow in your faith and understanding of the gospel.
+                    Kids can join our pre-sermon &quot;Foundations&quot; class, Sunday morning, where catechisms and
+                    scripture help build a strong theological foundation in understanding the gospel.
                   </p>
                 </div>
               </li>
               <li>
                 <div className="grid gap-1">
-                  <h3 className="text-xl font-bold">Community Outreach</h3>
+                  <h3 className="text-xl font-bold">Men&apos;s Bible Study: 7 PM</h3>
                   <p className="text-muted-foreground">
-                    Join us as we serve our local community through various outreach programs.
+                    Hosted every Wednesday night at the D&apos;Avanzo household. Our mid-week study is a great way to
+                    grow in your faith and understanding of the gospel.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div className="grid gap-1">
+                  <h3 className="text-xl font-bold">Women&apos;s Bible Study: 7 PM</h3>
+                  <p className="text-muted-foreground">
+                    Join us Monday nights at{" "}
+                    <Link
+                      href="https://www.google.com/maps/search/?api=1&query=2640+Elberton+Hwy%2C+Iva%2C+SC+29655"
+                      className="underline underline-offset-4 text-primary">
+                      Breaking Bread Farms
+                    </Link>{" "}
                   </p>
                 </div>
               </li>
