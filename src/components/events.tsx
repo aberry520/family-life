@@ -39,23 +39,23 @@ export default function Events() {
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Foundations: 9:45 AM</h3>
                   <p className="text-muted-foreground">
-                    Kids can join our pre-sermon "Foundations" class, Sunday morning, where catechisms and scripture
-                    help build a strong theological foundation in understanding the gospel.
+                    Kids can join our pre-sermon &quot;Foundations&quot; class, Sunday morning, where catechisms and
+                    scripture help build a strong theological foundation in understanding the gospel.
                   </p>
                 </div>
               </li>
               <li>
                 <div className="grid gap-1">
-                  <h3 className="text-xl font-bold">Men's Bible Study: 7 PM</h3>
+                  <h3 className="text-xl font-bold">Men&apos;s Bible Study: 7 PM</h3>
                   <p className="text-muted-foreground">
-                    Hosted every Wednesday night at the D'Avanzo household. Our mid-week study is a great way to grow in
-                    your faith and understanding of the gospel.
+                    Hosted every Wednesday night at the D&apos;Avanzo household. Our mid-week study is a great way to
+                    grow in your faith and understanding of the gospel.
                   </p>
                 </div>
               </li>
               <li>
                 <div className="grid gap-1">
-                  <h3 className="text-xl font-bold">Women's Bible Study: 7 PM</h3>
+                  <h3 className="text-xl font-bold">Women&apos;s Bible Study: 7 PM</h3>
                   <p className="text-muted-foreground">
                     Join us Monday nights at{" "}
                     <Link
