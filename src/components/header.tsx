@@ -83,21 +83,21 @@ export default function Header() {
           className="absolute top-16 right-6 bg-secondary shadow-lg rounded-md px-12 py-6 flex flex-col gap-6 items-center"
           style={{ color: "#0b4465" }}>
           <Link
-            href="#about"
+            href="/#about"
             onClick={() => setMenuOpen(false)}
             className="hover:underline underline-offset-4"
             prefetch={false}>
             About
           </Link>
           <Link
-            href="#events"
+            href="/services"
             onClick={() => setMenuOpen(false)}
             className="hover:underline underline-offset-4"
             prefetch={false}>
             Services
           </Link>
           <Link
-            href="#contact"
+            href="/contact"
             onClick={() => setMenuOpen(false)}
             className="hover:underline underline-offset-4"
             prefetch={false}>
@@ -109,6 +109,12 @@ export default function Header() {
             className="hover:underline underline-offset-4"
             prefetch={false}>
             Giving
+          </Link>
+          <Link
+            href="/leadership"
+            className="hover:underline underline-offset-4"
+            prefetch={false}>
+            Leadership
           </Link>
         </nav>
       )}
