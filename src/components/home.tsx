@@ -14,9 +14,6 @@ export default function Home() {
       <Landing />
       <About />
       <Values />
-      <Events />
-      <Gospel />
-      <Contact />
       <Footer />
     </div>
   );
