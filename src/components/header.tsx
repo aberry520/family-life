@@ -22,9 +22,9 @@ export default function Header() {
     <>
       <header
         className="py-4 px-6 flex items-center justify-between w-screen"
-        style={{ color: "#0b4465", backgroundColor: "rgba(255, 255, 255, 0.4)", position: "absolute" }}>
+        style={{ color: "#0b4465", backgroundColor: "rgba(255, 255, 255, 0.4)", position: "fixed" }}>
         <Link
-          href="#"
+          href="/#"
           className="flex items-center gap-2"
           prefetch={false}>
           <img
@@ -40,19 +40,19 @@ export default function Header() {
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           <Link
-            href="#about"
+            href="/#about"
             className="hover:underline underline-offset-4"
             prefetch={false}>
             About
           </Link>
           <Link
-            href="#events"
+            href="/#events"
             className="hover:underline underline-offset-4"
             prefetch={false}>
             Services
           </Link>
           <Link
-            href="#contact"
+            href="/#contact"
             className="hover:underline underline-offset-4"
             prefetch={false}>
             Contact
@@ -62,6 +62,12 @@ export default function Header() {
             className="hover:underline underline-offset-4"
             prefetch={false}>
             Giving
+          </Link>
+          <Link
+            href="/leadership"
+            className="hover:underline underline-offset-4"
+            prefetch={false}>
+            Leadership
           </Link>
         </nav>
         <Button
