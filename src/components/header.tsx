@@ -22,7 +22,7 @@ export default function Header() {
     <>
       <header
         className="py-4 px-6 flex items-center justify-between w-screen"
-        style={{ color: "#0b4465", backgroundColor: "rgba(255, 255, 255, 0.4)", position: "fixed" }}>
+        style={{ color: "#0b4465", backgroundColor: "rgba(236, 235, 235, 0.7)", position: "fixed", zIndex: 100 }}>
         <Link
           href="/#"
           className="flex items-center gap-2"
@@ -46,13 +46,13 @@ export default function Header() {
             About
           </Link>
           <Link
-            href="/#events"
+            href="/services"
             className="hover:underline underline-offset-4"
             prefetch={false}>
             Services
           </Link>
           <Link
-            href="/#contact"
+            href="/contact"
             className="hover:underline underline-offset-4"
             prefetch={false}>
             Contact
