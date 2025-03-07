@@ -40,23 +40,23 @@ export default function Landing() {
         backgroundImage: `url(${width > 768 ? currentBgUrl : backgrounds[randomIndex]})`,
         height: "80vh",
       }}>
-      <div className="container px-4 md:px-6">
+      <div className="container px-2 md:px-6">
         <div className="flex flex-col items-center justify-center text-center space-y-4">
           <h1
-            className="text-2xl font-bold tracking-normal text-primary-foreground sm:text-4xl md:text-6xl drop-shadow-lg"
-            style={{ fontFamily: "sinkin_sans600_semibold" }}>
+            className="text-3xl font-bold tracking-normal text-primary-foreground sm:text-4xl md:text-5xl lg:text-6xl drop-shadow-2xl"
+            style={{
+              fontFamily: "sinkin_sans600_semibold",
+              textUnderlineOffset: 10,
+              textDecorationThickness: 5,
+              textShadow: "2px 2px 3px #0b4465a0, 2px 2px 8px #000000ba",
+            }}>
             BY THE WORD OF GOD
           </h1>
-          <Link
-            href="#about"
-            className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-            prefetch={false}>
-            Learn More
-          </Link>
-          <p className="max-w-[600px] text-primary-foreground md:text-xl drop-shadow-lg">
-            A new church plant in Iva, SC!
-            <br /> Here to serve Jesus and this community!
-          </p>
+          <h2
+            className="max-w-[600px] text-primary-foreground text-md sm:text-xl md:text-3xl drop-shadow-lg p-2"
+            style={{ fontFamily: "sinkin_sans600_semibold", textShadow: "2px 2px 2px #0b4465" }}>
+            Sunday Service - 10 AM
+          </h2>
         </div>
       </div>
     </section>
