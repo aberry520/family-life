@@ -2,9 +2,7 @@ export default function Gospel() {
   return (
     <section
       id="gospel"
-      className="w-full py-12 md:py-24 lg:py-32 justify-center flex"
-      //   style={{ position: "absolute" }}
-    >
+      className="w-full py-12 md:py-24 lg:py-32 justify-center flex bg-[#f5f5f5]">
       <div className="container px-4 md:px-6">
         <div className="mx-auto max-w-3xl space-y-8">
           <div className="text-center">
