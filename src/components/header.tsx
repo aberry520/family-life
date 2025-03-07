@@ -46,10 +46,10 @@ export default function Header() {
             About
           </Link>
           <Link
-            href="/services"
+            href="/events"
             className="hover:underline underline-offset-4"
             prefetch={false}>
-            Services
+            Events
           </Link>
           <Link
             href="/contact"
@@ -80,8 +80,8 @@ export default function Header() {
       </header>
       {menuOpen && (
         <nav
-          className="absolute top-16 right-6 bg-secondary shadow-lg rounded-md px-12 py-6 flex flex-col gap-6 items-center"
-          style={{ color: "#0b4465" }}>
+          className="fixed top-16 right-6 bg-secondary shadow-lg rounded-md px-12 py-6 flex flex-col gap-6 items-center"
+          style={{ color: "#0b4465", zIndex: 1000 }}>
           <Link
             href="/#about"
             onClick={() => setMenuOpen(false)}
@@ -90,11 +90,11 @@ export default function Header() {
             About
           </Link>
           <Link
-            href="/services"
+            href="/events"
             onClick={() => setMenuOpen(false)}
             className="hover:underline underline-offset-4"
             prefetch={false}>
-            Services
+            Events
           </Link>
           <Link
             href="/contact"
