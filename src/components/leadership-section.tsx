@@ -114,8 +114,8 @@ export default function LeadershipSection() {
               </p>
               <div className="mt-6 p-4 bg-[#2563eb]/5 rounded-lg border border-[#2563eb]/10">
                 <p className="italic">
-                  "Let the elders who rule well be considered worthy of double honor, especially those who labor in
-                  preaching and teaching."
+                  &quot;Let the elders who rule well be considered worthy of double honor, especially those who labor in
+                  preaching and teaching.&quot;
                 </p>
                 <p className="text-sm mt-2">1 Timothy 5:17</p>
               </div>
