@@ -1,8 +1,8 @@
 "use client"
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Users, Heart, Globe, User, UserPlus, Coffee } from "lucide-react"
-import * as React from "react"
+import { Users, Heart, Globe, User, Coffee, Flower2 } from "lucide-react";
+import * as React from "react";
 type MinistryDetails = {
   [key: string]: {
     description: string;
@@ -15,7 +15,7 @@ export default function LeadershipSection() {
     { name: "Kids Ministry Team", icon: <Heart className="h-8 w-8 text-[#2563eb]" /> },
     { name: "Missions Team", icon: <Globe className="h-8 w-8 text-[#2563eb]" /> },
     { name: "Men's Ministry Team", icon: <User className="h-8 w-8 text-[#2563eb]" /> },
-    { name: "Women's Ministry Team", icon: <UserPlus className="h-8 w-8 text-[#2563eb]" /> },
+    { name: "Women's Ministry Team", icon: <Flower2 className="h-8 w-8 text-[#2563eb]" /> },
     { name: "Hospitality/Events Team", icon: <Coffee className="h-8 w-8 text-[#2563eb]" /> },
   ];
 
@@ -23,7 +23,7 @@ export default function LeadershipSection() {
   const [selectedMinistry, setSelectedMinistry] = React.useState<string>(ministryTeams[0].name);
 
   // Extended ministry details
-  const ministryDetails:MinistryDetails = {
+  const ministryDetails: MinistryDetails = {
     "Kids Ministry Team": {
       description:
         "Our Kids Ministry Team is dedicated to nurturing the spiritual growth of children through age-appropriate Bible teaching, fun activities, and creating a safe environment where kids can learn about God's love.",
@@ -120,24 +120,28 @@ export default function LeadershipSection() {
           </div>
 
           <div className="w-full max-w-4xl mx-auto">
-            <div className="flex flex-wrap border-b mb-6">
+            <div className="w-full max-w-4xl mx-auto flex justify-between border-b mb-6 overflow-x-auto">
               {ministryTeams.map((team, index) => (
                 <button
                   key={index}
-                  className={`px-4 py-3 text-sm sm:text-base font-medium transition-all relative ${
+                  className={`px-3 md:px-4 py-3 text-sm font-medium transition-all relative flex-1 min-w-0 ${
                     selectedMinistry === team.name
                       ? "text-[#2563eb] border-b-2 border-[#2563eb] -mb-px"
                       : "text-muted-foreground hover:text-[#2563eb]/70"
                   }`}
-                  onClick={() => setSelectedMinistry(team.name)}>
-                  <div className="flex items-center gap-2">
+                  onClick={() => setSelectedMinistry(team.name)}
+                  title={team.name}>
+                  <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-1 md:gap-2">
                     <div
                       className={`transition-colors ${
                         selectedMinistry === team.name ? "text-[#2563eb]" : "text-muted-foreground"
                       }`}>
                       {React.cloneElement(team.icon, { className: "h-5 w-5" })}
                     </div>
-                    <span>{team.name}</span>
+                    {/* <span className="hidden md:inline truncate">
+                      {team.name.replace(" Ministry Team", "").replace(" Team", "")}
+                    </span> */}
+                    <span className="hidden md:inline truncate">{team.name}</span>
                   </div>
                 </button>
               ))}
