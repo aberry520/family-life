@@ -83,29 +83,42 @@ export default function LeadershipSection() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-white flex justify-center">
       <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Church Leadership</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              Elder Led
+              <br />
+              Church Leadership
+            </h2>
             <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Serving our congregation with wisdom and grace
             </p>
           </div>
         </div>
 
-        <div className="mx-auto max-w-3xl mt-12">
-          <Card className="border-none shadow-md">
-            <CardHeader className="text-center bg-[#2563eb]/5 rounded-t-lg">
-              <div className="mx-auto mb-4 p-2 rounded-full bg-[#2563eb]/10 w-fit">
-                <Users className="h-8 w-8 text-[#2563eb]" />
+        <div className="relative mx-auto mb-24">
+          <Card className="border-none shadow-xl bg-white overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-2 bg-[#3e568b81]"></div>
+            {/* <CardHeader className="text-center pt-10 pb-6">
+              <div className="mx-auto mb-6 p-4 rounded-full bg-[#2563eb]/10 w-fit">
+                <Users className="h-12 w-12 text-[#2563eb]" />
               </div>
-              <CardTitle className="text-2xl">Elder Leadership</CardTitle>
-            </CardHeader>
-            <CardContent className="pt-6 text-center">
-              <p className="text-muted-foreground">
-                Family Life Church is led by a plurality of biblical elders who provide doctrinal instruction, vision,
-                spiritual nourishment, and direction. Additionally, FLC has a number of ministry teams that serve under
-                the oversight of the elders.
+              <CardTitle className="text-3xl font-bold text-[#2563eb]">Elder Led</CardTitle>
+              <p className="text-lg text-muted-foreground mt-2">Biblical Guidance & Spiritual Direction</p>
+            </CardHeader> */}
+            <CardContent className="pt-4 pb-10 text-center max-w-3xl mx-auto">
+              <p className="text-lg">
+                Family Life Church is led by a <span className="font-semibold">plurality of biblical elders</span> who
+                provide doctrinal instruction, vision, spiritual nourishment, and direction. Our elders are committed to
+                shepherding the congregation according to Scripture and guiding the church in fulfilling its mission.
               </p>
+              <div className="mt-6 p-4 bg-[#2563eb]/5 rounded-lg border border-[#2563eb]/10">
+                <p className="italic">
+                  "Let the elders who rule well be considered worthy of double honor, especially those who labor in
+                  preaching and teaching."
+                </p>
+                <p className="text-sm mt-2">1 Timothy 5:17</p>
+              </div>
             </CardContent>
           </Card>
         </div>
@@ -174,11 +187,11 @@ export default function LeadershipSection() {
                     <div className="pt-2">
                       <h4 className="font-medium text-[#2563eb] mb-1">Get Involved</h4>
                       <p>
-                        Interested in serving with this team? Contact us at{" "}
+                        Interested in serving with this team?{" "}
                         <a
-                          href={`mailto:${ministryDetails[selectedMinistry].contact}`}
+                          href="/contact#contact"
                           className="text-[#2563eb] underline underline-offset-2">
-                          {ministryDetails[selectedMinistry].contact}
+                          Contact us!
                         </a>
                       </p>
                     </div>
