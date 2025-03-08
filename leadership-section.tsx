@@ -3,7 +3,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Users, Heart, Globe, User, UserPlus, Coffee } from "lucide-react"
 import * as React from "react"
-
+type MinistryDetails = {
+  [key: string]: {
+    description: string;
+    responsibilities: string[];
+    contact: string;
+  };
+};
 export default function LeadershipSection() {
   const ministryTeams = [
     { name: "Kids Ministry Team", icon: <Heart className="h-8 w-8 text-[#2563eb]" /> },
@@ -11,22 +17,13 @@ export default function LeadershipSection() {
     { name: "Men's Ministry Team", icon: <User className="h-8 w-8 text-[#2563eb]" /> },
     { name: "Women's Ministry Team", icon: <UserPlus className="h-8 w-8 text-[#2563eb]" /> },
     { name: "Hospitality/Events Team", icon: <Coffee className="h-8 w-8 text-[#2563eb]" /> },
-  ]
+  ];
 
   // Add state to track selected ministry
-  const [selectedMinistry, setSelectedMinistry] = React.useState<string | null>(null);
-
-  // Set the first ministry as default selected
-  React.useEffect(() => {
-    if (!selectedMinistry && ministryTeams.length > 0) {
-      setSelectedMinistry(ministryTeams[0].name);
-    } else {
-      setSelectedMinistry(null);
-    }
-  }, [selectedMinistry, ministryTeams]);
+  const [selectedMinistry, setSelectedMinistry] = React.useState<string>(ministryTeams[0].name);
 
   // Extended ministry details
-  const ministryDetails = {
+  const ministryDetails:MinistryDetails = {
     "Kids Ministry Team": {
       description:
         "Our Kids Ministry Team is dedicated to nurturing the spiritual growth of children through age-appropriate Bible teaching, fun activities, and creating a safe environment where kids can learn about God's love.",
@@ -158,14 +155,12 @@ export default function LeadershipSection() {
                   <CardContent className="space-y-4">
                     <div>
                       <h4 className="font-medium text-[#2563eb] mb-1">About This Ministry</h4>
-                      {/* @ts-ignore */}
                       <p>{ministryDetails[selectedMinistry].description}</p>
                     </div>
 
                     <div>
                       <h4 className="font-medium text-[#2563eb] mb-1">Key Responsibilities</h4>
                       <ul className="list-disc pl-5 space-y-1">
-                        {/* @ts-ignore */}
                         {ministryDetails[selectedMinistry].responsibilities.map((item, i) => (
                           <li key={i}>{item}</li>
                         ))}
@@ -177,10 +172,8 @@ export default function LeadershipSection() {
                       <p>
                         Interested in serving with this team? Contact us at{" "}
                         <a
-                          /* @ts-ignore */
                           href={`mailto:${ministryDetails[selectedMinistry].contact}`}
                           className="text-[#2563eb] underline underline-offset-2">
-                          {/* @ts-ignore */}
                           {ministryDetails[selectedMinistry].contact}
                         </a>
                       </p>
