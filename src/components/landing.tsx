@@ -48,15 +48,21 @@ export default function Landing() {
               fontFamily: "sinkin_sans600_semibold",
               textUnderlineOffset: 10,
               textDecorationThickness: 5,
-              textShadow: "2px 2px 3px #0b4465a0, 2px 2px 8px #000000ba",
+              textShadow: "2px 2px 8px #000000ba",
             }}>
             BY THE WORD OF GOD
           </h1>
           <h2
             className="max-w-[600px] text-primary-foreground text-md sm:text-xl md:text-3xl drop-shadow-lg p-2"
-            style={{ fontFamily: "sinkin_sans600_semibold", textShadow: "2px 2px 2px #0b4465" }}>
+            style={{ fontFamily: "sinkin_sans600_semibold", textShadow: "2px 2px 10px #00000083" }}>
             Sunday Service - 10 AM
           </h2>
+          <p
+            className="max-w-[600px] text-primary-foreground md:text-xl drop-shadow-lg"
+            style={{ textShadow: "2px 2px 10px #00000083" }}>
+            A new church plant in Iva, SC!
+            <br /> Here to serve Jesus and this community!
+          </p>
         </div>
       </div>
     </section>
