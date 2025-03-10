@@ -88,7 +88,12 @@ export default function Events() {
               <div
                 key={2}
                 style={{ minWidth: "100%" }}>
-                <img src="images/family-discipleship.png" />
+                <img src="images/foundations.JPG" />
+              </div>
+              <div
+                key={3}
+                style={{ minWidth: "100%" }}>
+                <img src="images/cuba-trip.JPG" />
               </div>
             </Carousel>
           </div>
