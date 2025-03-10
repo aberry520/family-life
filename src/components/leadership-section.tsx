@@ -81,7 +81,7 @@ export default function LeadershipSection() {
   };
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-white flex justify-center">
+    <section className="w-full py-20 md:py-24 lg:py-32 bg-white flex justify-center">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
           <div className="space-y-2">
