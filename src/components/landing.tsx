@@ -48,7 +48,7 @@ export default function Landing() {
               fontFamily: "sinkin_sans600_semibold",
               textUnderlineOffset: 10,
               textDecorationThickness: 5,
-              textShadow: "2px 2px 14px #00000068",
+              textShadow: "2px 2px 16px #00000068",
             }}>
             BY THE WORD OF GOD
           </h1>
