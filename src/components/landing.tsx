@@ -40,7 +40,7 @@ export default function Landing() {
         backgroundImage: `url(${width > 768 ? currentBgUrl : backgrounds[randomIndex]})`,
         height: "80vh",
       }}>
-      <div className="container px-2 md:px-6">
+      <div className="container md:px-6">
         <div className="flex flex-col items-center justify-center text-center space-y-4">
           <h1
             className="text-3xl font-bold tracking-normal text-primary-foreground sm:text-4xl md:text-5xl lg:text-6xl drop-shadow-2xl"
@@ -48,7 +48,7 @@ export default function Landing() {
               fontFamily: "sinkin_sans600_semibold",
               textUnderlineOffset: 10,
               textDecorationThickness: 5,
-              textShadow: "2px 2px 8px #000000ba",
+              textShadow: "2px 2px 12px #00000093",
             }}>
             BY THE WORD OF GOD
           </h1>
