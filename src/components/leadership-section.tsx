@@ -6,7 +6,7 @@ import * as React from "react";
 type MinistryDetails = {
   [key: string]: {
     description: string;
-    responsibilities: string[];
+    opportunities: string[];
     contact: string;
   };
 };
@@ -26,32 +26,29 @@ export default function LeadershipSection() {
   const ministryDetails: MinistryDetails = {
     "Kids Ministry Team": {
       description:
-        "Our Kids Ministry Team is dedicated to nurturing the spiritual growth of children through age-appropriate Bible teaching, fun activities, and creating a safe environment where kids can learn about God's love.",
-      responsibilities: [
-        "Sunday school programs",
-        "Vacation Bible School",
-        "Children's worship",
-        "Nursery care",
-        "Family events",
+        "Our kids ministry team seeks to point children to Jesus through the teaching of Scripture and developing relationships. We desire for our kids to live their lives “by the Word of God” so that they can join the adults in being “family finding life in Christ”",
+      opportunities: [
+        "Foundations: This is a kids small group that takes place at 9:45am on Sundays. Kids learn core components of theology and how that points them to Christ and applies to their lives.",
+        "Kids Activities: Throughout the year we will plan several events and activities for kids. These activities are intended to be fun but also to invest in kids and create opportunities to point them to Jesus.",
+        "Pre-Service Playtime: Each week many of our kids come early for a chance to play together before church starts. It can get loud, but the kids love having a fun time building relationships and seeing that church is for kids too!",
       ],
       contact: "kids@familylifechurch.example",
     },
     "Missions Team": {
       description:
-        "The Missions Team coordinates our church's local and global outreach efforts, supporting missionaries and organizing service projects to share God's love with those in need around the world.",
-      responsibilities: [
-        "Missionary support",
-        "Short-term mission trips",
-        "Community outreach",
-        "Disaster relief",
-        "Partnership with global ministries",
+        "A core part of Family Life Church is that we are on mission to share Jesus with others and make disciples. Our missions team exists to create and seek out opportunities for our church to share Jesus with a lost world.",
+      opportunities: [
+        "Evangelistic Events: We are intentional about planning community events that will create opportunities to share the gospel.",
+        "Door-to-Door Prayer: We seeks to regularly go door to door in our community in order to prayer for people and show them the love of Jesus. This will also be an opportunity to share the gospel with them.",
+        "Local Ministries: Our Missions Team will also seek out other local ministries that are making a gospel impact in our area so that we can support them in their work.",
+        "Mission Trips: We are intentionally planning mission trips each year. Sometimes these will be international trips (we have a partnership with a house church network in Cuba). Other times these will be local or domestic mission trips. Either way, we will be going and sharing Jesus wherever we are!",
       ],
       contact: "missions@familylifechurch.example",
     },
     "Men's Ministry Team": {
       description:
         "The Men's Ministry Team focuses on discipleship and fellowship opportunities specifically for men, encouraging spiritual leadership in homes, church, and community through Bible studies and events.",
-      responsibilities: [
+      opportunities: [
         "Men's Bible studies",
         "Mentoring",
         "Retreats and conferences",
@@ -63,13 +60,13 @@ export default function LeadershipSection() {
     "Women's Ministry Team": {
       description:
         "Our Women's Ministry Team provides opportunities for women to grow in their faith through Bible studies, prayer groups, and special events designed to foster meaningful relationships and spiritual growth.",
-      responsibilities: ["Women's Bible studies", "Prayer groups", "Retreats", "Mentoring", "Special events"],
+      opportunities: ["Women's Bible studies", "Prayer groups", "Retreats", "Mentoring", "Special events"],
       contact: "womens@familylifechurch.example",
     },
     "Hospitality/Events Team": {
       description:
         "The Hospitality and Events Team creates a welcoming atmosphere for church gatherings, coordinates special events, and ensures visitors feel welcomed and connected to our church family.",
-      responsibilities: [
+      opportunities: [
         "Sunday morning welcome",
         "Church-wide events",
         "Fellowship meals",
@@ -176,9 +173,9 @@ export default function LeadershipSection() {
                     </div>
 
                     <div>
-                      <h4 className="font-medium text-[#2563eb] mb-1">Key Responsibilities</h4>
+                      <h4 className="font-medium text-[#2563eb] mb-1">Serving Opportunities</h4>
                       <ul className="list-disc pl-5 space-y-1">
-                        {ministryDetails[selectedMinistry].responsibilities.map((item, i) => (
+                        {ministryDetails[selectedMinistry].opportunities.map((item, i) => (
                           <li key={i}>{item}</li>
                         ))}
                       </ul>
