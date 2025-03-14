@@ -47,32 +47,20 @@ export default function LeadershipSection() {
     },
     "Men's Ministry Team": {
       description:
-        "The Men's Ministry Team focuses on discipleship and fellowship opportunities specifically for men, encouraging spiritual leadership in homes, church, and community through Bible studies and events.",
-      opportunities: [
-        "Men's Bible studies",
-        "Mentoring",
-        "Retreats and conferences",
-        "Service projects",
-        "Accountability groups",
-      ],
+        "We believe that God desires strong men in the church. We strive to disciple men and teach them to disciple other men as they lead their families, study Scripture, live as faithful examples, and point people to Jesus.",
+      opportunities: ["We have a discussion based Bible study specifically for men every Wednesday night at 7pm."],
       contact: "mens@familylifechurch.example",
     },
     "Women's Ministry Team": {
       description:
-        "Our Women's Ministry Team provides opportunities for women to grow in their faith through Bible studies, prayer groups, and special events designed to foster meaningful relationships and spiritual growth.",
-      opportunities: ["Women's Bible studies", "Prayer groups", "Retreats", "Mentoring", "Special events"],
+        "We believe that God desires women who are strong in their faith, loving their families, faithful in their living, and putting the beauty of Christ on display with their lives. We strive to teach these things and more to women as they encourage and disciple one another and raise up more godly women.",
+      opportunities: ["We have a discussion based Bible study specifically for women every Monday night at 7pm."],
       contact: "womens@familylifechurch.example",
     },
     "Hospitality/Events Team": {
       description:
-        "The Hospitality and Events Team creates a welcoming atmosphere for church gatherings, coordinates special events, and ensures visitors feel welcomed and connected to our church family.",
-      opportunities: [
-        "Sunday morning welcome",
-        "Church-wide events",
-        "Fellowship meals",
-        "Visitor follow-up",
-        "Church decorating",
-      ],
+        "As we seek opportunities to point one another to Jesus, our Hospitality/Events team seeks to organize welcoming environments for fellowship and community.",
+      opportunities: ["Various events throughout the year during which we can love one another."],
       contact: "hospitality@familylifechurch.example",
     },
   };
