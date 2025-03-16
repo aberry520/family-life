@@ -40,7 +40,7 @@ export default function Header() {
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           <Link
-            href="/#about"
+            href="/about"
             className="hover:underline underline-offset-4"
             prefetch={false}>
             About
@@ -83,7 +83,7 @@ export default function Header() {
           className="fixed top-16 right-6 bg-secondary shadow-lg rounded-md px-12 py-6 flex flex-col gap-6 items-center"
           style={{ color: "#0b4465", zIndex: 1000 }}>
           <Link
-            href="/#about"
+            href="/about"
             onClick={() => setMenuOpen(false)}
             className="hover:underline underline-offset-4"
             prefetch={false}>
