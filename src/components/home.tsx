@@ -1,11 +1,8 @@
-import Contact from "./contact";
 import Footer from "./footer";
 import Header from "./header";
 import { About } from "./about";
-import Values from "./values";
 import Landing from "./landing";
-import Events from "./events";
-import Gospel from "./gospel";
+import JoinUs from "./joinUs";
 
 export default function Home() {
   return (
@@ -13,7 +10,7 @@ export default function Home() {
       <Header />
       <Landing />
       <About />
-      <Values />
+      <JoinUs />
       <Footer />
     </div>
   );
