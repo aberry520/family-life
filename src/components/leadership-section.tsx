@@ -118,21 +118,21 @@ export default function LeadershipSection() {
           </div>
 
           <div className="w-full max-w-4xl mx-auto">
-            <div className="w-full max-w-4xl mx-auto flex justify-between border-b mb-6 overflow-x-auto">
+            <div className="w-full max-w-4xl mx-auto flex justify-between">
               {ministryTeams.map((team, index) => (
                 <button
                   key={index}
                   className={`px-3 md:px-4 py-3 text-sm font-medium transition-all relative flex-1 min-w-0 ${
                     selectedMinistry === team.name
-                      ? "text-[#2563eb] border-b-2 border-[#2563eb] -mb-px"
-                      : "text-muted-foreground hover:text-[#2563eb]/70"
+                      ? "text-[#2563eb] border-b-0 border-[#2563eb] bg-[#2563eb]/5 rounded-t-lg border"
+                      : "text-muted-foreground hover:text-[#2563eb]/70 bg-muted rounded-t-lg border border-b-[#2563eb]"
                   }`}
                   onClick={() => setSelectedMinistry(team.name)}
                   title={team.name}>
                   <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-1 md:gap-2">
                     <div
                       className={`transition-colors ${
-                        selectedMinistry === team.name ? "text-[#2563eb]" : "text-muted-foreground"
+                        selectedMinistry === team.name ? "text-[#2563eb] drop-shadow" : "text-muted-foreground"
                       }`}>
                       {React.cloneElement(team.icon, { className: "h-5 w-5" })}
                     </div>
@@ -147,7 +147,9 @@ export default function LeadershipSection() {
 
             {selectedMinistry ? (
               <div className="animate-in fade-in duration-300">
-                <Card className="border-[#2563eb]/20 bg-[#2563eb]/5">
+                <Card
+                  className="border-[#2563eb] bg-[#2563eb]/5 border-t-0 min-h-[600px]"
+                  style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>
                   <CardHeader>
                     <div className="flex items-center gap-3">
                       {ministryTeams.find((team) => team.name === selectedMinistry)?.icon}
