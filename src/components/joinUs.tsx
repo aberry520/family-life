@@ -37,8 +37,8 @@ export default function JoinUs() {
                   <MapPin className="h-5 w-5 text-muted-foreground mt-0.5" />
                   <div>
                     <h3 className="font-medium">Our Address</h3>
-                    <p className="text-sm text-muted-foreground">123 Faith Street</p>
-                    <p className="text-sm text-muted-foreground">Anytown, ST 12345</p>
+                    <p className="text-sm text-muted-foreground">205 West Jackson Street</p>
+                    <p className="text-sm text-muted-foreground">Iva, SC 29655</p>
                   </div>
                 </div>
               </CardContent>
