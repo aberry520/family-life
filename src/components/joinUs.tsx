@@ -57,8 +57,8 @@ export default function JoinUs() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  We're excited to welcome you! Our services are casual and friendly. When you arrive, our greeters will
-                  help you find your way around and answer any questions you might have.
+                  We&apos;re excited to welcome you! Our services are casual and friendly. When you arrive, our greeters
+                  will help you find your way around and answer any questions you might have.
                 </p>
               </CardContent>
               <CardFooter>
@@ -73,7 +73,7 @@ export default function JoinUs() {
           <Card>
             <CardHeader>
               <CardTitle>Find Us</CardTitle>
-              <CardDescription>We're located in the heart of the community</CardDescription>
+              <CardDescription>We&apos;re located in the heart of the community</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="aspect-square w-full overflow-hidden rounded-md">
