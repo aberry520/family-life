@@ -22,9 +22,9 @@ export default function Header() {
     <>
       <header
         className="py-4 px-6 flex items-center justify-between w-screen"
-        style={{ color: "#0b4465", backgroundColor: "rgba(255, 255, 255, 0.4)", position: "absolute" }}>
+        style={{ color: "#0b4465", backgroundColor: "rgba(236, 235, 235, 0.7)", position: "fixed", zIndex: 100 }}>
         <Link
-          href="#"
+          href="/#"
           className="flex items-center gap-2"
           prefetch={false}>
           <img
@@ -40,19 +40,19 @@ export default function Header() {
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           <Link
-            href="#about"
+            href="/about"
             className="hover:underline underline-offset-4"
             prefetch={false}>
             About
           </Link>
           <Link
-            href="#events"
+            href="/events"
             className="hover:underline underline-offset-4"
             prefetch={false}>
-            Services
+            Events
           </Link>
           <Link
-            href="#contact"
+            href="/contact"
             className="hover:underline underline-offset-4"
             prefetch={false}>
             Contact
@@ -62,6 +62,12 @@ export default function Header() {
             className="hover:underline underline-offset-4"
             prefetch={false}>
             Giving
+          </Link>
+          <Link
+            href="/leadership"
+            className="hover:underline underline-offset-4"
+            prefetch={false}>
+            Leadership
           </Link>
         </nav>
         <Button
@@ -74,24 +80,24 @@ export default function Header() {
       </header>
       {menuOpen && (
         <nav
-          className="absolute top-16 right-6 bg-secondary shadow-lg rounded-md px-12 py-6 flex flex-col gap-6 items-center"
-          style={{ color: "#0b4465" }}>
+          className="fixed top-16 right-6 bg-secondary shadow-lg rounded-md px-12 py-6 flex flex-col gap-6 items-center"
+          style={{ color: "#0b4465", zIndex: 1000 }}>
           <Link
-            href="#about"
+            href="/about"
             onClick={() => setMenuOpen(false)}
             className="hover:underline underline-offset-4"
             prefetch={false}>
             About
           </Link>
           <Link
-            href="#events"
+            href="/events"
             onClick={() => setMenuOpen(false)}
             className="hover:underline underline-offset-4"
             prefetch={false}>
-            Services
+            Events
           </Link>
           <Link
-            href="#contact"
+            href="/contact"
             onClick={() => setMenuOpen(false)}
             className="hover:underline underline-offset-4"
             prefetch={false}>
@@ -103,6 +109,12 @@ export default function Header() {
             className="hover:underline underline-offset-4"
             prefetch={false}>
             Giving
+          </Link>
+          <Link
+            href="/leadership"
+            className="hover:underline underline-offset-4"
+            prefetch={false}>
+            Leadership
           </Link>
         </nav>
       )}
